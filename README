@@ -1,0 +1,15 @@
+#########################################################
+#	This folder contains the steps to 		#
+#	process the 5 cohorts of autism datasets	#
+#		Peikai Chen, April 2015			#
+#########################################################
+
+First, the original data were in hg18/GCRh36, and marker info needs to be updated
+and re-aligned.
+
+These are the keep steps:
+	1. The original data were at /home/pkchen/autism/data_afterQC
+	2. The plink data were then copied to the folder: step0-rename
+		nothing has changed in this folder except the names
+	3. we used liftOver to provide new chromomal positions fpr hg19/GRCh17.
+		In all, 102 markers cannot be mapped. They stored at: miss-liftover-failed102-with-rs.txt
